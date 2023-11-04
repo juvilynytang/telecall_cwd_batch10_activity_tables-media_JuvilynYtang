@@ -1,0 +1,499 @@
+<html>
+    <head>
+        <!DOCTYPE html>
+        <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+                <link rel="stylesheet" href="tables.css">
+                <title>Tables & Media</title>
+    </head>
+        <body>
+            <h1 class="red-text text-lighten-1" align="center">Table</h1>
+            <div class="divider"></div>
+            <div class="container">
+                <p>&ensp;&ensp;&ensp;&ensp;&ensp;Tables are a nice way to organiz  e a lot of data. We provide a few utility classes to help you style your table as easily as possible. In addition, to improve mobile experience, all tables on mobile-screen widths are centered automatically.</p>
+            <table>
+                <thead class="grey lighten-1">
+                    <tr>
+                        <th>Name</th>
+                        <th>Item Name</th>
+                        <th>Item Price</th>
+                    </tr>
+                </thead>
+                <tbody class="grey lighten-3">
+                    <tr>
+                        <td>Alvin</td>
+                        <td>Eclair</td>
+                        <td>$0.87</td>
+                    </tr>
+                    <tr>
+                        <td>Alan</td>
+                        <td>Jellybean</td>
+                        <td>$3.76</td>
+                    </tr>
+                    <tr>
+                        <td>Jonathan</td>
+                        <td>Lollipop</td>
+                        <td>$7.00</td>
+                    </tr>
+                    <tr>
+                        <td>Shannon</td>
+                        <td>Kitkat</td>
+                        <td>$9.99</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            <br>
+            <div class="container">
+            <div class="card-panel">
+                <pre class="language-markup">
+                <code>
+                    &lt;<span class="purple-text text-purple lighten-2">table</span>&gt;
+                        &lt;<span class="purple-text text-purple lighten-2">thead</span>&gt;
+                            &lt;<span class="purple-text text-purple lighten-2">tr</span>&gt;
+                                &lt;<span class="purple-text text-purple lighten-2">th</span>&gt;Name&lt;/th&gt;
+                                &lt;<span class="purple-text text-purple lighten-2">th</span>&gt;Item Name&lt;/th&gt;
+                                &lt;<span class="purple-text text-purple lighten-2">th</span>&gt;Item Price&lt;/th&gt;
+                            &lt;<span class="purple-text text-purple lighten-2">/tr</span>&gt;
+                        &lt;<span class="purple-text text-purple lighten-2">/thead</span>&gt;
+                    
+                        &lt;<span class="purple-text text-purple lighten-2">tbody</span>&gt;
+                            &lt;<span class="purple-text text-purple lighten-2">tr</span>&gt;
+                                &lt;<span class="purple-text text-purple lighten-2">td</span>&gt;Alvin&lt;/td&gt;
+                                &lt;<span class="purple-text text-purple lighten-2">td</span>&gt;Eclair&lt;/td&gt;
+                                &lt;<span class="purple-text text-purple lighten-2">td</span>&gt;$0.87&lt;/td&gt;
+                            &lt;<span class="purple-text text-purple lighten-2">/tr</span>&gt;
+                            &lt;<span class="purple-text text-purple lighten-2">tr</span>&gt;
+                                &lt;<span class="purple-text text-purple lighten-2">td</span>&gt;Alan&lt;/td&gt;
+                                &lt;<span class="purple-text text-purple lighten-2">td</span>&gt;Jellybean&lt;/td&gt;
+                                &lt;<span class="purple-text text-purple lighten-2">td</span>&gt;$3.76&lt;/td&gt;
+                            &lt;<span class="purple-text text-purple lighten-2">/tr</span>&gt;
+                            &lt;<span class="purple-text text-purple lighten-2">tr</span>&gt;
+                                &lt;<span class="purple-text text-purple lighten-2">td</span>&gt;Jonathan&lt;/td&gt;
+                                &lt;<span class="purple-text text-purple lighten-2">td</span>&gt;Lollipop&lt;/td&gt;
+                                &lt;<span class="purple-text text-purple lighten-2">td</span>&gt;$7.00&lt;/td&gt;
+                            &lt;<span class="purple-text text-purple lighten-2">/tr</span>&gt;
+                        &lt;<span class="purple-text text-purple lighten-2">/tbody</span>&gt;
+                    &lt;<span class="purple-text text-purple lighten-2">/table</span>&gt;
+                            </code>
+            </pre>
+            </div>
+                <h3 class="red-text text-lighten-1">Stripped Table</h3>
+                    <p>Add class="striped" to the table tag for a striped table</p>
+                <table class="striped deep-orange lighten-5">
+                        <thead class="deep-orange lighten-4">
+                            <tr>
+                                <th>Name</th>
+                                <th>Item Name</th>
+                                <th>Item Price</th>
+                            </tr>
+                        </thead>
+                    <tbody>
+                            <tr>
+                                <td>Alvin</td>
+                                <td>Eclair</td>
+                                <td>$0.87</td>
+                            </tr>
+                            <tr>
+                                <td>Alan</td>
+                                <td>Jellybean</td>
+                                <td>$3.76</td>
+                            </tr>
+                            <tr>
+                                <td>Jonathan</td>
+                                <td>Lollipop</td>
+                                <td>$7.00</td>
+                            </tr>
+                            <tr>
+                                <td>Shannon</td>
+                                <td>Kitkat</td>
+                                <td>$9.99</td>
+                            </tr>
+                    </tbody>
+                </table>
+                <h3 class="red-text text-lighten-1">Highlight Table</h3>
+                <p>Add class="highlight" to the table tag for a highlight table.</p>
+            <table class="highlight cyan lighten-5">
+                    <thead class="light-blue lighten-4">
+                        <tr>
+                            <th>Name</th>
+                            <th>Item Name</th>
+                            <th>Item Price</th>
+                        </tr>
+                    </thead>
+                <tbody>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Shannon</td>
+                            <td>Kitkat</td>
+                            <td>$9.99</td>
+                        </tr>
+                </tbody>
+            </table>
+            <h3 class="red-text text-lighten-1">Centered Table</h3>
+            <p>Add class="centered" to the table tag to center align all the text in the table</p>
+        <table class="centered">
+                <thead class="orange lighten-4">
+                    <tr>
+                        <th>Name</th>
+                        <th>Item Name</th>
+                        <th>Item Price</th>
+                    </tr>
+                </thead>
+            <tbody class="orange lighten-5">
+                    <tr>
+                        <td>Alvin</td>
+                        <td>Eclair</td>
+                        <td>$0.87</td>
+                    </tr>
+                    <tr>
+                        <td>Alan</td>
+                        <td>Jellybean</td>
+                        <td>$3.76</td>
+                    </tr>
+                    <tr>
+                        <td>Jonathan</td>
+                        <td>Lollipop</td>
+                        <td>$7.00</td>
+                    </tr>
+                    <tr>
+                        <td>Shannon</td>
+                        <td>Kitkat</td>
+                        <td>$9.99</td>
+                    </tr>
+            </tbody>
+        </table>
+        <h3 class="red-text text-lighten-1">Responsive Table</h3>
+        <p>Add class="responsive-table" to the table tag to make the table horizontally scrollable on smaller screen widths.</p>
+    <table class="responsive-table">
+            <thead class="lime lighten-4">
+                <tr>
+                    <th>Name</th>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                </tr>
+            </thead>
+        <tbody class="lime lighten-5">
+                <tr>
+                    <td>Alvin</td>
+                    <td>Eclair</td>
+                    <td>$0.87</td>
+                </tr>
+                <tr>
+                    <td>Alan</td>
+                    <td>Jellybean</td>
+                    <td>$3.76</td>
+                </tr>
+                <tr>
+                    <td>Jonathan</td>
+                    <td>Lollipop</td>
+                    <td>$7.00</td>
+                </tr>
+                <tr>
+                    <td>Shannon</td>
+                    <td>Kitkat</td>
+                    <td>$9.99</td>
+                </tr>
+        </tbody>
+    </table>
+    <br><br><br><br>
+    </div>
+        <h1 class="red-text text-lighten 2 center">Media CSS</h1>
+    <div class="divider"></div>
+    <div class="container">
+        <h3 class="red-text text-lighten 2">Images</h3>
+        <p>Images can be styled in different ways using Materialize</p>
+        <p class="flow-text">Responsive Images</p>
+        <p>To make images resize responsively to page width, you can add the class responsive-img to your image tag. It will now have a max-width: 100% and height:auto.</p>
+
+        <p class="flow-text">Circular images</p>
+        <div class="col s12 m8 offset-m2 l6 offset-l3">
+            <div class="card-panel grey lighten-1 z-depth-1">
+            <div class="row valign-wrapper">
+                <div class="col s2">
+                <img src="thalia.jpg" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
+                </div>
+                <div class="col s10">
+                <span class="black-text">
+                    This is a square image. Add the "circle" class to it to make it appear circular.
+                </span>
+                </div>
+            </div>
+            </div>
+        </div>
+        <br>
+        <p>To make images appear circular, simply add class="circle" to them</p>
+    <div id="embeds" class="container">
+        <pre class="language-markup">
+        <code>
+        &lt;<span class="purple-text text-purple lighten-2">div</span> <span class="green-text text-green">class</span>="<span class="blue-text text-blue">col s12 m8 offset-m2 l6 offset-l3</span>"&gt;
+            &lt;<span class="purple-text text-purple lighten-2">div</span> <span class="green-text text-green">class</span>="<span class="blue-text text-blue">card-panel grey lighten-5 z-depth-1</span>"&gt;
+                &lt;<span class="purple-text text-purple lighten-2">div</span> <span class="green-text text-green">class</span>="<span class="blue-text text-blue">row valign-wrapper</span>"&gt;
+                &lt;<span class="purple-text text-purple lighten-2">div</span> <span class="green-text text-green">class</span>="<span class="blue-text text-blue">col s2</span>"&gt;
+                    &lt;<span class="purple-text text-purple lighten-2">img</span> <span class="green-text text-green">src</span>="<span class="blue-text text-blue">images/yuna.jpg</span>" <span class="green-text text-green">alt</span>="" <span class="green-text text-green">class</span>="<span class="blue-text text-blue">circle responsive-img</span>"&gt; <span class="grey-text text-grey">&lt;!-- notice the "circle" class --&gt;</span>
+                &lt;<span class="purple-text text-purple lighten-2">/div&gt;
+                &lt;<span class="purple-text text-purple lighten-2">div</span> <span class="green-text text-green">class</span>="<span class="blue-text text-blue">col s10</span>"&gt;
+                    &lt;<span class="purple-text text-purple lighten-2">span</span> <span class="green-text text-green">class</span>="<span class="blue-text text-blue">black-text</span>"&gt;
+                        <span class="black-text text-black">This is a square image. Add the "circle" class to it to make it appear circular.</span>
+                    &lt;<span class="purple-text text-purple lighten-2">/span&gt;
+                &lt;<span class="purple-text text-purple lighten-2">/div&gt;
+                &lt;<span class="purple-text text-purple lighten-2">/div&gt;
+            &lt;<span class="purple-text text-purple lighten-2">/div&gt;
+        &lt;<span class="purple-text text-purple lighten-2">/div&gt;
+                </code>
+        </pre>
+    </div>
+        <h3 class="red-text text-lighten 2">Videos</h3>
+            <p>We provide a container for Embedded Videos that resizes them responsively.</p>
+            <br><br>
+            <p class="flow-text">Responsive Embeds</p>
+            <p>To make your embeds responsive, merely wrap them with a containing div which has the class video-container</p>
+        
+        <div class="video-container">
+                <iframe width="688" height="480" src="https://www.youtube.com/embed/SCFX6bobXMI" title="Pride Of A Father (Official Live Video) - Hillsong Young &amp; Free" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    <div id="embeds" class="container">
+    <pre class="language-markup">
+    <code>
+    &lt;<span class="purple-text text-purple lighten-2">div</span> <span class="green-text text-green">class</span>="<span class="blue-text text-blue">video-container</span>"&gt;
+        &lt;<span class="purple-text text-purple lighten-2">iframe</span> <span class="green-text text-green">width</span>="<span class="blue-text text-blue">853</span>" <span class="green-text text-green">height</span>="<span class="blue-text text-blue">480</span>" <span class="green-text text-green">src</span>="<span class="blue-text text-blue">//www.youtube.com/embed/Q8TXgCzxEnw?rel</span>=<span class="blue-text text-blue">0</span>" <span class="green-text text-green">frameborder</span>="<span class="blue-text text-blue">0</span>" <span class="green-text text-green">allowfullscreen</span>&gt;&lt;<span class="purple-text text-purple lighten-2">/iframe&gt;
+    &lt;<span class="purple-text text-purple lighten-2">video&gt;
+    </code>
+    </pre>
+    </div>
+
+            <p class="flow-text">Responsive Videos</p>
+            <p>To make your HTML5 Videos responsive just add the class responsive-video to the video tag.</p>
+            
+            <div class="video-container">
+            <div class="responsive-video controls">
+                <iframe width="688" height="480" src="https://www.youtube.com/embed/GEAcs2B-kNc" title="Mighty to Save - Hillsong Worship" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        </div>
+    <div class="container">
+    <div class="card-panel">
+    <pre class="language-markup">
+    <code>
+    &lt;<span class="purple-text text-purple lighten-2">video</span> <span class="green-text text-green">class</span>="<span class="blue-text text-blue">responsive-video</span>"<span class="green-text text-green"> controls</span>&gt;
+        &lt;<span class="purple-text text-purple lighten-2">source</span> <span class="green-text text-green">src</span>="<span class="blue-text text-blue">movie.mp4</span>" <span class="green-text text-green">type</span>="<span class="blue-text text-blue">video/mp4</span>"&gt;
+    &lt;<span class="purple-text text-purple lighten-2">video&gt;
+    </code>
+    </pre>
+    </div>
+    </div>
+
+    <h1 class="red-text text-red lighten-1 center">Media</h1>
+    <div class="divider"></div>
+    <div class="container">
+        <p>&ensp;&ensp;&ensp;&ensp;&ensp;Media components include things that have to do with large media objects like Images, Video, Audio, etc.</p>
+    <br>
+    <br>
+
+    <h3 class="red-text text-red lighten-1">Material Box</h3>
+        <p>&ensp;&ensp;&ensp;&ensp;&ensp;Material box is a material design implementation of the Lightbox plugin. When a user clicks on an image that can be enlarged, Material box centers the image and enlarges it in a smooth, non-jarring manner. To dismiss the image, the user can either click on the image again, scroll away, or press the ESC key</p>
+        <img class="materialboxed responsive-img" width="850" src="media.jpg" data-caption="You are saved by His Grace">
+        <p>Creating the above image with the effect is as simple as adding a materialboxed class to the image tag. </p>
+    
+    <div id="embeds" class="card-panel">
+        <pre class="language-markup">
+        <code>
+        <span class="purple-text text-purple lighten-2">video</span> <span class="green-text text-green">class</span>="<span class="blue-text text-blue">responsive-video</span>"<span class="green-text text-green"> controls</span>&gt;
+            <span class="blue-text text-blue">var</span> elems = document.<span class="red-text text-red">querySelectorAll</span>(<span class="green-text text-green">'.materialboxed'</span>);
+            <span class="blue-text text-blue">var</span> instances = M.Materialbox.<span class="red-text text-red">init</span>(elems, options);
+            });
+            <span class="blue-text text-blue">var</span>
+            
+        </code>
+        </pre>
+    </div>
+
+    <h4>Initialization</h4>
+    <div id="embeds" class="card-panel">
+        <pre class=" language-javascript">
+        <code class="language-javascript">
+        document.<span class="red-text text-red">addEventListener</span>(<span class="green-text text-green">'DOMContentLoaded'</span>, <span class="blue-text text-blue">function</span>() {
+            <span class="purple-text text-purple lighten-2">source</span> <span class="green-text text-green">src</span>="<span class="blue-text text-blue">movie.mp4</span>" <span class="green-text text-green">type</span>="<span class="blue-text text-blue">video/mp4</span>"&gt;
+        
+        
+        <span class="grey-text text-grey">  // Or with jQuery
+        
+        <span class="red-text text-red">$</span>(document). <span class="red-text text-red">ready</span>(<span class="blue-text text-blue">function</span>() {
+            <span class="red-text text-red">$</span>('<span class="green-text text-green">.materialboxed</span>').<span class="red-text text-red">materialbox</span>();
+        });          
+        </code>
+        </pre>
+    </div>
+
+    <h4>Options</h4>
+    <table class="striped deep-purple lighten-5 responsive centered">
+        <thead class="striped deep-purple lighten-4">
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Default</th>
+                <th>Description</th>
+
+            </tr>
+        </thead>
+    <tbody>
+            <tr>
+                <td>inDuration</td>
+                <td>Number</td>
+                <td>275</td>
+                <td>Transition in duration in milliseconds.</td>
+            </tr>
+            <tr>
+                <td>outDuration</td>
+                <td>Number</td>
+                <td>200</td>
+                <td>Transition out duration in milliseconds.</td>
+            </tr>
+            <tr>
+                <td>onOpenStart</td>
+                <td>Function</td>
+                <td>null</td>
+                <td>Callback function called before materialbox is opened.</td>
+            </tr>
+            <tr>
+                <td>onOpenEnd</td>
+                <td>Function</td>
+                <td>null</td>
+                <td>Callback function called after materialbox is opened.</td>
+            </tr>
+            <tr>
+                <td>onCloseStart</td>
+                <td>Function</td>
+                <td>null</td>
+                <td>Callback function called before materialbox is closed.</td>
+            </tr>
+            <tr>
+                <td>onOpenEnd</td>
+                <td>Function</td>
+                <td>null</td>
+                <td>Callback function called after materialbox is closed.</td>
+            </tr>
+    </tbody>
+</table>
+
+    <h4>Methods</h4>
+    <blockquote>
+        <p>Because jQuery is no longer a dependency, all the methods are called on the plugin instance. You can get the plugin instance like this:</p>
+        <div id="embeds" class="card-panel">
+            <pre class=" language-javascript">
+                <code class="language-javascript">
+    <span class="blue-text text-blue">var</span> instance = M.Materialbox.<span class="red-text text-red">getInstance</span>(elem);
+    <span class="grey-text text-grey">  /* jQuery Method Calls
+        You can still use the old jQuery plugin method calls.
+        But you won't be able to access instance properties.
+
+        $('.materialboxed').materialbox('methodName');
+        $('.materialboxed').materialbox('methodName', paramName);
+    */
+        </div>
+
+    </blockquote>
+
+    <h3 class="red-text text-red lighten-1">Slider</h3>
+        <p>Our slider is a simple and elegant image carousel. You can also have captions that will be transitioned on their own depending on their alignment. You can also have indicators that show up on the bottom of the slider.</p>
+        <div class="slider">
+        <ul class="slides">
+            <li>
+                <img src="slider2.jpg">
+                <div class="caption center-align">
+                    <h2 class="white-text text-white font">5 Christian Habits</h2>
+                    <h5 class="white-text text-white">Strengthen your Faith!</h5>
+                </div>
+            </li>
+            <li>
+                <img src="slider1.jpg">
+                <div class="caption left-align">
+                    <h3 class="red-text text-red">Read the Bible</h3>
+                    <h5 class="white-text text-white">The Bible is God's Word. It is our guidebook, our light, and an intergral way in which we connect to God.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="slider3.jpg">
+                <div class="caption right-align">
+                    <h3 class="black-text text-black">Prayer</h3>
+                    <h5 class="white-text text-white">The Bible is God's letter to us. It contains his instructions, His discipline, and His grace. The way we communicate back to God is through prayer.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="slider4.jpg">
+                <div class="caption left-align">
+                    <h3 class="yellow-text text-yellow">Fellowship</h3>
+                    <h5 class="white-text text-white">If prayer is how we communicate with God, then fellowship is how we connect with other Christians. Sorround yourself with God's people.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="slider5.jpg">
+                <div class="caption right-align">
+                    <h3>Give</h3>
+                    <h5 class="white-text text-white">If we are imitators of Christ, we must give of ourselves to further the kingdom. This means being generous with our time, money and other resources.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="slider6.jpg">
+                <div class="caption left-align">
+                    <h3>Share your faith</h3>
+                    <h5 class="white-text text-white">Share the good new to your friends, families and aquintances. Let them also know God and understand his Goodness and how he saves us.</h5>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <br><br>
+
+
+    </div>
+
+
+
+
+
+
+
+
+        <!--Jquery CDN-->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        
+        <script>
+            $(document).ready(function() {
+                // materialbox init
+                $('.materialboxed').materialbox({
+                    inDuration: 1000,
+                    outDuration: 1000,
+                    interval: 1000
+                });
+                // slider init
+                    $('.slider').slider({
+                    });
+                });
+        </script>
+    
+    
+    
+    </body>
+
+</html>
